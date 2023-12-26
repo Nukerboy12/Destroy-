@@ -275,7 +275,7 @@ class Superstar:
     def menu(self):
         os.system(f"cls & title Superstar Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
         print(Superstar_art + options + "\n")
-        ans = input("{}({}Thallium{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m")) 
+        ans = input("{}({}Superstar{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m")) 
         
         if ans in ["1", "01"]:
             scrape = input("{}({} Superstar{}) Fetch IDs [Y/N]{}:{} ".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m"))
@@ -395,7 +395,7 @@ class Superstar:
             
         elif ans in ["9", "09"]:
             self.messages.clear(); self.channels.clear()
-            amount = int(input("{}({}Thallium{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m")))
+            amount = int(input("{}({}Superstar{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m")))
             channels = self.session.get(f"https://discord.com/api/v9/guilds/{guildid}/channels", headers={"Authorization": f"Bot {token}"}).json()
             for channel in channels: self.channels.append(channel['id'])
             channelz = cycle(self.channels)
@@ -406,7 +406,7 @@ class Superstar:
                     t.join()
                     
             time.sleep(3)
-            print("{}({}Thallium{}) Spammed {}/{} messages".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", len(self.messages), amount))
+            print("{}({}Superstar{}) Spammed {}/{} messages".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", len(self.messages), amount))
             time.sleep(1.5)
             self.menu()
             
@@ -432,7 +432,7 @@ class Superstar:
             self.menu()
         
         elif ans == "12":
-            print("{}({}Superstar{}) Thanks for using Thallium!".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m"))
+            print("{}({}Superstar{}) Thanks for using Superstar!".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m"))
             time.sleep(1.5)
             os._exit(0)
             
