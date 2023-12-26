@@ -441,7 +441,7 @@ class Superstar:
 async def on_ready():
     print("{}({}Superstar{}) Authenticated as{}: {}{}".format("\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", "\x1b[38;5;122m", "\x1b[0m", f"{__client__.user.name}#{__client__.user.discriminator}"))
     time.sleep(1.5)
-    Thallium().menu()
+    Superstar().menu()
     
 
 if __name__ == "__main__":
