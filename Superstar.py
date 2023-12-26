@@ -400,7 +400,7 @@ class Superstar:
             for channel in channels: self.channels.append(channel['id'])
             channelz = cycle(self.channels)
             for i in range(amount):
-                t = threading.Thread(target=self.execute_massping, args=(next(channelz), random.choice(Aizer), token))
+                t = threading.Thread(target=self.execute_massping, args=(next(channelz), random.choice(superstar), token))
                 t.start()
                 while threading.active_count() >= __threads__ - 15:
                     t.join()
@@ -427,7 +427,7 @@ class Superstar:
     
         
         elif ans == "11":
-            print("Developed By hr development | Developed By Aizer X Virus X Saurav || Join :- Hr https://discord.gg/hackersop || You-tube :-  https://youtube.com/@nukersop")
+            print("Developed By nr development | Daveloped by superstar || Join :- nr coming || You-tube :-  coming")
             input("")
             self.menu()
         
