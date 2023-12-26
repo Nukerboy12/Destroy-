@@ -26,7 +26,7 @@ SOFTWARE.
 import threading, webbrowser, discord, random, httpx, json, time, os; from discord.ext import commands;from itertools import cycle
 
 VERSION = '1.0.0'
-Superstar = ("@everyone @here *NUKING RESIDENCEY | SuperstaR On Top Bxby .gg/nrop* PAPA AYE THE')
+Superstar = ("@everyone @here *NUKING RESIDENCEY | SuperstaR On Top Bxby .gg/nrop* PAPA AYE THE")
 
 __intents__ = discord.Intents.default()
 __intents__.members = True
