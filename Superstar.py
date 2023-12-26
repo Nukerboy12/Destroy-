@@ -400,7 +400,7 @@ class Superstar:
             for channel in channels: self.channels.append(channel['id'])
             channelz = cycle(self.channels)
             for i in range(amount):
-                t = threading.Thread(target=self.execute_massping, args=(next(channelz), random.choice(superstar), token))
+                t = threading.Thread(target=self.execute_massping, args=(next(channelz), random.choice("nuke"), token))
                 t.start()
                 while threading.active_count() >= __threads__ - 15:
                     t.join()
